@@ -1,0 +1,633 @@
+//--------- Start Banner Area -------------//
+.home-banner-area {
+    background: url(../img/banner-bg.jpg) center;
+    background-size: cover;
+    .fullscreen {
+        @media (max-width: 769px) {
+            height: 600px!important;
+        }
+    }
+}
+
+.banner-area {
+    background: $primary-color2;
+}
+
+.banner-content {
+    text-align: left;
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 66px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @media ( max-width: 1024px) {
+            font-size: 45px;
+        }
+        @media ( max-width: 576px) {
+            font-size: 35px;
+        }
+        @media ( max-width: 325px) {
+            font-size: 32px;
+        }
+    }
+    .me {
+        background: $primary-color2;
+        padding: 18px;
+        display: inline-block;
+        color: $white;
+        font-size: 16px;
+        border-radius: 8px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -15px;
+            width: 0;
+            height: 0;
+            border-left: 26px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 24px solid $primary-color2;
+        }
+    }
+    .designation {
+        max-width: 390px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 42px;
+        @media ( max-width: 576px) {
+            font-size: 25px;
+        }
+        .designer {
+            color: $primary-color;
+        }
+        .developer {
+            color: $primary-color2;
+        }
+    }
+}
+
+.banner-img {
+    text-align: right;
+    position: relative;
+    left: 160px;
+    @media(max-width: 1480px) {
+        left: 0px;
+    }
+    @media(max-width: 991px) {
+        display: none;
+    }
+    img {
+        @media(max-width: 1480px) {
+            max-width: 80%;
+        }
+    }
+}
+
+//--------- End Banner Area -------------//
+//--------- start brand Area -------------//
+.brand-wrap {
+    background: $white;
+    margin-top: -75px;
+    border-radius: 100px;
+    padding: 64px 14px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+    border: 1px solid rgba(214, 214, 214, 0.11);
+    @media(max-width: 991px) {
+        padding: 40px 0;
+        margin-top: -52px;
+    }
+    .owl-carousel .owl-item img {
+        width: auto !important;
+    }
+    .single-brand {
+        text-align: center;
+        @include filter(grayscale, 100%);
+        opacity: .5;
+        @include transition();
+        &:hover {
+            @include filter(grayscale, 0%);
+            opacity: 1;
+        }
+    }
+}
+
+//--------- end brand Area -------------//
+/*-------- Start About Area ------------*/
+
+.about-area {
+    .section-title {
+        margin-bottom: 0;
+        @media (max-width: 1024px) {
+            padding-bottom: 0px;
+        }
+    }
+    .about-left {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+    .primary-btn.white {
+        margin-right: 10px;
+        @media (max-width: 1199px) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 0px;
+        }
+        @media (max-width: 374px) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/*-------- End About Area ------------*/
+
+/*--------- Start Work Area -------------*/
+
+.work-area {
+    background: $offwhite;
+    .row.mb-80 {
+        @media (max-width: 1024px) {
+            margin-bottom: 30px;
+        }
+    }
+    .section-title {
+        margin-bottom: 0;
+    }
+    .filters {
+        text-align: center;
+        @media (max-width: 991px) {
+            margin-top: 40px;
+        }
+        ul {
+            padding: 0;
+            text-align: right;
+            @media (max-width: 991px) {
+                text-align: left;
+            }
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 0 15px;
+                cursor: pointer;
+                position: relative;
+                text-transform: capitalize;
+                font-size: 13px;
+                &:last-child {
+                    padding-right: 0;
+                }
+                @media (max-width: 991px) {
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+                &.active,
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .filters-content {
+        .show {
+            opacity: 1;
+            visibility: visible;
+            transition: all 350ms;
+        }
+        .hide {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 350ms;
+        }
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+}
+
+.single-work {
+    border-radius: 5px;
+    margin-bottom: 30px;
+    .thumb {
+        .overlay-bg {
+            background: $primary-color;
+            opacity: 0;
+            border-radius: 5px;
+            @include transition();
+        }
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+    }
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        text-align: center;
+        @include transition();
+        h4 {
+            font-size: 21px;
+            color: $white;
+        }
+        .cat {
+            font-size: 15px;
+            color: $white;
+        }
+    }
+    &:hover {
+        .thumb {
+            .overlay-bg {
+                opacity: .80;
+            }
+        }
+        .middle {
+            opacity: 1;
+        }
+    }
+}
+
+/*--------- End Work Area -------------*/
+
+//--------- start job  area -------------//
+.job-area {
+    &.offwhite {
+        background: $offwhite;
+    }
+}
+.single-job {
+    background-color: $offwhite;
+    padding: 40px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    @include transition();
+    .top-sec {
+        @media (max-width: 576px) {
+            @include flex-direction(column);
+        }
+    }
+    .top-left {
+        h4 {
+            color: $black;
+            font-size: 21px;
+            @include transition();
+            font-weight: 700;
+            @media (max-width: 1199px) {
+                font-size: 18px;
+            }
+        }
+    }
+    .bottom-sec {
+        @media (max-width: 576px) {
+            margin-top: 30px;
+        }
+    }
+    .primary-btn {
+        padding: 0 28px;
+        background: $white;
+        color: $title-color;
+        border: 1px solid $primary-color2;
+        @media (max-width: 1199px) {
+            padding: 0 15px;
+        }
+        span {
+            color: $title-color;
+        }
+        &:before {
+            color: $title-color;
+        }
+    }
+    &:hover {
+        background: $primary-color2;
+        cursor: pointer;
+        color: $white;
+        .top-left {
+            h4 {
+                color: $white;
+            }
+        }
+    }
+}
+
+//--------- end job area  -------------//
+//--------- Start service Area -------------//
+.service-area {
+    background: $offwhite;
+    &.white {
+        background: $white;
+    }
+    .col-lg-3.col-md-6 {
+        &:nth-child(1) {
+            .single-service {
+                background: #e2a599;
+            }
+        }
+        &:nth-child(2) {
+            .single-service {
+                background: #715f69;
+            }
+        }
+        &:nth-child(3) {
+            .single-service {
+                background: $primary-color;
+            }
+        }
+        &:nth-child(4) {
+            .single-service {
+                background: #90acd1;
+            }
+        }
+    }
+}
+
+.single-service {
+    color: $white;
+    padding: 60px 30px;
+    border-radius: 5px;
+    @include transition();
+    @media (max-width: 1199px) {
+        padding: 30px 15px;
+    }
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+        padding: 60px 30px;
+    }
+    @media (max-width: 576px) {
+        text-align: center;
+    }
+    .lnr {
+        font-size: 36px;
+        color: $white;
+        @include transition();
+    }
+    h4 {
+        color: $white;
+        font-size: 21px;
+        line-height: 27px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        span {
+            display: block;
+            @media (max-width: 767px) {
+                display: inline-block;
+            }
+        }
+    }
+    &:hover {
+        @include transform(translateY(-10px));
+    }
+}
+
+//--------- End service Area -------------//
+//--------- Testimonials Area -------------//
+.testimonials_area {
+    position: relative;
+    .owl-controls {
+        text-align: center;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        .owl-nav {
+            position: relative;
+            top: 29px;
+            .owl-prev,
+            .owl-next {
+                display: inline-block;
+                margin-right: 31px;
+                color: #000;
+            }
+            .owl-prev {
+                margin-right: 80px;
+            }
+            .owl-next {
+                margin-left: 80px;
+                margin-right: 0;
+            }
+        }
+        .owl-dots {
+            .owl-dot {
+                height: 4px;
+                width: 40px;
+                background: #eeeeee;
+                display: inline-block;
+                @include transition;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &:hover,
+                &.active {
+                    background: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.testi_slider {
+    margin: auto;
+    .testi_item {
+        text-align: center;
+        img {
+            width: auto;
+            margin: auto;
+        }
+    }
+}
+
+.testi_item {
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+    h4 {
+        font-size: 21px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .list {
+        margin-bottom: 35px;
+        li {
+            display: inline-block;
+            a {
+                color: #ffc000;
+                font-size: 14px;
+            }
+        }
+    }
+    p {
+        max-width: 570px;
+        margin: auto;
+    }
+}
+
+//--------- End Testimonials Area -------------//
+//--------- Start Contact Area -------------//
+.contact-area {
+    background: $primary-color;
+    .row.mt-80 {
+        @media (max-width: 1024px) {
+            margin-top: 40px;
+        }
+    }
+    .contact-title {
+        color: $white;
+        text-align: center;
+        h2 {
+            color: $white;
+            position: relative;
+            margin-bottom: 45px;
+            font-size: 48px;
+            line-height: 45px;
+            @media (max-width: 1024px) {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 576px) {
+                font-size: 30px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -15px;
+                @include transform(translateX(-50%));
+                width: 100px;
+                height: 2px;
+                background: $white;
+                @media (max-width: 1024px) {
+                    bottom: -5px;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -19px;
+                @include transform(translateX(-50%));
+                background: $white;
+                width: 10px;
+                height: 10px;
+                border-radius: 8px;
+                @media (max-width: 1024px) {
+                    bottom: -9px;
+                }
+            }
+        }
+        p {
+            max-width: 540px;
+            margin: 0 auto;
+        }
+    }
+    .primary-btn {
+        background: $white;
+        color: $black;
+        border: 1px solid $white;
+        &:before {
+            color: $black;
+        }
+        span {
+            color: $black;
+        }
+        &:hover {
+            background: transparent;
+            span {
+                color: $white;
+            }
+        }
+    }
+}
+
+.contact-box {
+    text-align: center;
+    h4 {
+        font-size: 21px;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+//--------- End Contact Area -------------//
+//----------- Start Generic Page -------------//
+.whole-wrap {
+    background-color: $white;
+}
+
+.generic-banner {
+    margin-top: 60px;
+    background-color: $primary-color;
+    text-align: center;
+    .height {
+        height: 600px;
+        @include media-breakpoint-down (sm) {
+            height: 400px;
+        }
+    }
+    .generic-banner-content {
+        h2 {
+            line-height: 1.2em;
+            margin-bottom: 20px;
+            br {
+                @include media-breakpoint-down (md) {
+                    display: none;
+                }
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            br {
+                @include media-breakpoint-down (md) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.generic-content {
+    h1 {
+        font-weight: 600;
+    }
+}
+
+.about-generic-area {
+    background: $white;
+    .border-top-generic {}
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.white-bg {
+    background: $white;
+}
+
+.section-top-border {
+    padding: 50px 0;
+    border-top: 1px dotted #eee;
+}
+
+.switch-wrap {
+    margin-bottom: 10px;
+    p {
+        margin: 0;
+    }
+}
+
+//----------- End Generic Page -------------//

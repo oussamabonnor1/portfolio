@@ -1,0 +1,51 @@
+//--------- start footer Area -------------//
+
+.footer-area{
+    padding: 100px 0;
+    @media (max-width: 1024px) {
+        padding: 60px 0;
+    }
+    .footer-logo {
+        text-align: center;
+        h4 {
+            font-size: 21px;
+            color: $text-color;
+            font-weight: 700;
+            margin-top: 48px;
+        }
+    }
+	.footer-social{
+		text-align: center;
+        margin: 25px 0px 50px;
+        @media (max-width: 1024px) {
+            margin: 15px 0px 30px;
+        }
+		a{
+			padding: 0 20px;
+			i{
+                color: #cccccc;
+                font-size: 36px;
+                @include transition();
+                @media ( max-width: 576px) {
+                    font-size: 25px;
+                }
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	.footer-bottom{
+        text-align: center;
+        p {
+            margin-bottom: 0;
+        }
+		a{
+			color:$primary-color;
+		}
+	}
+}
+
+
+//--------- end footer Area -------------//
