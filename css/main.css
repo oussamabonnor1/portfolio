@@ -2386,13 +2386,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f9f9ff; }
   .service-area.white {
     background: #fff; }
-  .service-area .col-lg-3.col-md-6:nth-child(1) .single-service {
-    background: #e2a599; }
-  .service-area .col-lg-3.col-md-6:nth-child(2) .single-service {
-    background: #715f69; }
-  .service-area .col-lg-3.col-md-6:nth-child(3) .single-service {
-    background: #e45447; }
   .service-area .col-lg-3.col-md-6:nth-child(4) .single-service {
+    background: #e2a599; }
+  .service-area .col-lg-3.col-md-6:nth-child(3) .single-service {
+    background: #715f69; }
+  .service-area .col-lg-3.col-md-6:nth-child(2) .single-service {
+    background: #e45447; }
+  .service-area .col-lg-3.col-md-6:nth-child(1) .single-service {
     background: #90acd1; }
 
 .single-service {
