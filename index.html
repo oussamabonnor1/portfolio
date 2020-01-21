@@ -53,7 +53,7 @@
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
 						<li class=""><a class="active" href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
+						<li><a href="#aboutMe">About</a></li>
 						<li><a href="portfolio.html">Portfolio</a></li>
 						<li class="menu-has-children"><a href="#">Pages</a>
 							<ul>
@@ -110,34 +110,12 @@
 
 
 	<!-- Start brands Area -->
-	<section class="brands-area">
-		<div class="container">
-			<div class="brand-wrap">
-				<div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
-					<div class="col single-brand">
-						<a href="#"><img class="mx-auto" src="img/brand/b1.png" alt=""></a>
-					</div>
-					<div class="col single-brand">
-						<a href="#"><img class="mx-auto" src="img/brand/b2.png" alt=""></a>
-					</div>
-					<div class="col single-brand">
-						<a href="#"><img class="mx-auto" src="img/brand/b3.png" alt=""></a>
-					</div>
-					<div class="col single-brand">
-						<a href="#"><img class="mx-auto" src="img/brand/b4.png" alt=""></a>
-					</div>
-					<div class="col single-brand">
-						<a href="#"><img class="mx-auto" src="img/brand/b5.png" alt=""></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 	<!-- End brands Area -->
 
 
 	<!-- Start About Area -->
-	<section class="about-area section-gap">
+	<section id="aboutMe" class="about-area section-gap">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-6 about-left">
@@ -543,6 +521,77 @@
 	<section class="contact-area section-gap">
 		<div class="container">
 			<div class="row">
+				<div class="col-lg-4 d-flex flex-column address-wrap">
+					<div class="single-contact-address d-flex flex-row">
+						<div class="contact-title">
+							<h4>Oran, Algeria.</h4>
+						</div>
+					</div>
+				</br>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="contact-title">
+							<h4>+213 798 682 999</h4>
+						</div>
+					</div>
+				</br>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="contact-title">
+							<h4>oussamabonnor@gmail.com</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+						<div class="row">
+							<div class="col-lg-6 form-group form-group-top">
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+								 class="common-input mb-20 form-control" required="" type="text">
+
+								<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+
+								<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'"
+								 class="common-input mb-20 form-control" required="" type="text">
+							</div>
+							<div class="col-lg-6 form-group">
+								<textarea class="common-textarea form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"
+								 required=""></textarea>
+							</div>
+							<div class="col-lg-12">
+								<div class="alert-msg" style="text-align: left;"></div>
+
+								<button class="primary-btn" style="float: right;" data-text="Send Message">
+									<span>S</span>
+									<span>e</span>
+									<span>n</span>
+									<span>d</span>
+									<span> </span>
+									<span>M</span>
+									<span>e</span>
+									<span>s</span>
+									<span>s</span>
+									<span>a</span>
+									<span>g</span>
+									<span>e</span>
+
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-lg-12">
+						<iframe class="map-wrap" style="width:100%; height: 445px;" 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53365.699765845064!2d-0.6709374686011141!3d35.691644964447214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e8854841f537d%3A0x4187f63762f7290f!2sOran!5e0!3m2!1sen!2sdz!4v1579602787133!5m2!1sen!2sdz" 
+						width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		
+				</div>
+				</div>
+		</div>
+	</section>
+<!--	<section class="contact-area section-gap">
+		<div class="container">
+			<div class="row">
 				<div class="col-lg-12">
 					<div class="contact-title">
 						<h2>Contact Me</h2>
@@ -584,6 +633,7 @@
 			</div>
 		</div>
 	</section>
+	-->
 	<!-- End Contact Area -->
 
 

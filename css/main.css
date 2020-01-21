@@ -2507,7 +2507,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   @media (max-width: 1024px) {
     .contact-area .row.mt-80 {
       margin-top: 40px; } }
-  .contact-area .contact-title {
+  .contact-area .contact-title  {
     color: #fff;
     text-align: center; }
     .contact-area .contact-title h2 {
@@ -2516,6 +2516,8 @@ body.mobile-nav-active #mobile-nav-toggle {
       margin-bottom: 45px;
       font-size: 48px;
       line-height: 45px; }
+      .contact-area .contact-title h4 {
+        color: #fff; }
       @media (max-width: 1024px) {
         .contact-area .contact-title h2 {
           font-size: 40px;
@@ -2728,6 +2730,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .contact-page-area .map-wrap {
   margin-top: 80px; }
+  .contact-area .map-wrap {
+    margin-top: 80px; }
   @media (max-width: 991px) {
     .contact-page-area .map-wrap {
       margin-top: 40px; } }
